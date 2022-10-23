@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2C858D"/>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="src/static/img/favico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="src/static/img/favico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="src/static/img/favico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="src/static/img/favico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="src/static/img/favico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="src/static/img/favico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="src/static/img/favico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="src/static/img/favico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/static/img/favico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="src/static/img/favico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/static/img/favico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="src/static/img/favico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/static/img/favico/favicon-16x16.png">
+    <link rel="manifest" href="src/static/img/favico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+
+    <!-- ESTILOS -->
     <link rel="stylesheet" href="src/static/css/styles.css">
     <link rel="stylesheet" href="src/static/css/normalize.css">
     <link rel="stylesheet" href="src/static/css/hover.css">
@@ -22,14 +42,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     <title>Portfolio Web</title>
 </head>
 <body>
     <div class="container">
+        
+
         <div class="responsive-menu responsive-menu-hide">
             <a onclick="remove();" class="hvr-float-shadow hvr-overline-from-right" href="#inicio">INICIO</a>
             <a onclick="remove();" class="hvr-float-shadow hvr-overline-from-right" href="#about">ACERCA DE MÍ</a>
             <a onclick="remove();" class="hvr-float-shadow hvr-overline-from-right" href="#proyectos">PROYECTOS</a>
+            <a onclick="remove();" class="hvr-float-shadow hvr-overline-from-right" href="#imagen">IMAGEN</a>
             <a onclick="remove();" class="hvr-float-shadow hvr-overline-from-right" href="#contacto">CONTACTO</a>
             <a onclick="remove();">X</a>
         </div>
@@ -45,28 +70,43 @@
             <img data-speed="3" class="layer sk8" src="src/static/img/skills_8.png" alt="">
             <img data-speed="7" class="layer sk9" src="src/static/img/skills_9.png" alt="">
         </div>
-
+        
         <header>
             <nav>
                 <a class="logo" href="#inicio">Edu/Art</a>
                 <div class="enlaces">
-                    <a class="e-1 hvr-float-shadow hvr-overline-from-right" href="#inicio">INICIO</a>
-                    <a class="e-1 hvr-float-shadow hvr-overline-from-right" href="#about">ACERCA DE MÍ</a>
-                    <a class="e-1 hvr-float-shadow hvr-overline-from-right" href="#proyectos">PROYECTOS</a>
-                    <a class="e-1 hvr-float-shadow hvr-overline-from-right" href="#contacto">CONTACTO</a>
+                    <a class="e-1 hvr-underline-from-left" href="#inicio">INICIO</a>
+                    <a class="e-1 hvr-underline-from-left" href="#about">ACERCA DE MÍ</a>
+                    <a class="e-1 hvr-underline-from-left" href="#proyectos">PROYECTOS</a>
+                    <a class="e-1 hvr-underline-from-left" href="#imagen">IMAGEN</a>
+                    <a class="e-1 hvr-underline-from-left" href="#contacto">CONTACTO</a>
                     <a class="menu"><i class="fa-solid fa-bars"></i></a>
                 </div>
             </nav>
         </header>
-
+        
         <section class="description" id="inicio">
             <div class="titles">
                 <h1>Eduardo Santamaria</h1>
                 <h2>Frontend Developer</h2>
                 <p>¡Hola! Mi nombres es Eduardo, desarrollador y diseñador Frontend con gusto y pasión por el mundo creativo y la mejor experiencia de usuario.</p>
-                <a class="hvr-icon-hang" href="#">Navegar <i class="fa-solid fa-arrow-down"></i></a>
+                <a class="s" href="#about">Navegar <i class="fa-solid fa-arrow-down"></i></a>
             </div>
         </section>
+
+        <!-- Monster -->
+        <div class="box">
+            <div class="eye eye1"></div>
+            <div class="eye eye2"></div>
+            <div class="mouth-element">
+                <div class="noise"></div>
+                <div class="mouth"></div>
+                <div class="mouth"></div>
+            </div>
+            <div class="message">
+                <p>¡Hola! <br>Espero que disfrutes tu recorrido a través de mi sitio web. Cualquier duda o mensaje con gusto lo atiendo.</p>
+            </div>
+        </div>
 
         <section class="sect about" id="about">
             <h3>¡Saludos!</h3>
@@ -175,21 +215,52 @@
             <div class="content">
                 <br>
                 <h3>¡Diseño de Prototipos!</h3>
+                <p class="info">Me enfoco en realizar prototipos e interfaces web por medio de <span>Adobe Xd,</span> que es mi principal herramienta y preferida, pero también puedo llegar a crearlos en Figma, aunque este último no es del todo mi fuerte.</p>
                 <div class="content">
                     <div class="box-1">
                         <img src="src/static/img/project1.png" alt="">
-                        <p>¡Creación de interfaces en Adobe Xd</p>
+                        <hr>
+                        <p>¡Creación de interfaces en Adobe Xd!</p>
                     </div>
                     <div class="box-2">
                         <img src="src/static/img/project2.png" alt="">
+                        <hr>
                         <p>Diseños basados en requerimientos</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact" id="contacto">
+        <section class="sect imagen" id="imagen">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L80,122.7C160,117,320,107,480,117.3C640,128,800,160,960,149.3C1120,139,1280,85,1360,58.7L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+            <h3>Edición de imagen e ilustración...</h3>
+            <p>
+                Me especializo en la edición e ilsutración con herramientas como Adobe Photoshop, Adobe Illustrator o el Software libre de Krita o Clip Studio.
+            </p>
+            <hr>
+            <div class="content">
+                <div class="content-img">
+                    <img src="src/static/img/gallery/img_22.jpg" alt="">
+                    <img class="img-absolute thumbnail" src="src/static/img/gallery/img_15.jpg" alt="">
+                    <p>¡Ilustración digital creado con <br> <span>Krita y Photoshop</span>!</p>
+                </div>
+                
+                <div class="content-img">
+                    <p>¡Edición de imagen con <span>Adobe Photoshop</span>!</p>
+                    <img src="src/static/img/gallery/img_14.jpg" alt="">
+                    <img class="img-absolute-r thumbnail" src="src/static/img/gallery/img_3.jpg" alt="">
+                </div>
+                
+                <div class="content-img">
+                    <img src="src/static/img/gallery/img_24.jpg" alt="">
+                    <img class="img-absolute thumbnail" src="src/static/img/gallery/img_28.jpg" alt="">
+                    <p>¡Ilustración digital con <br> <span>Illustrator</span>!</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="contact" id="contacto">
             <h3>¿Tienes preguntas o simplemente deseas saludar?</h3>
             <p>¡Con gusto podemos platicar por alguno de los siguientes medios!</p>
             <hr>
@@ -206,5 +277,7 @@
         </footer>
     </div>
     <script src="src/static/js/main.js"></script>
+    <script src="src/static/js/custom_mouse.js"></script>
+
 </body>
 </html>
